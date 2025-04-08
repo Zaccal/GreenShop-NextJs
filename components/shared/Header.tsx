@@ -12,7 +12,7 @@ const Header = async () => {
   return (
     <header>
       <div className="container py-6 border-b-border border-b flex justify-between items-center">
-        <Image src={'/Logo.png'} alt="Logo" width={150} height={34.95} />
+        <Image src={'/Logo.png'} alt="Logo" width={150} height={34} priority />
         <nav>
           <ul className="flex gap-[50px] text-md">
             <li>Home</li>

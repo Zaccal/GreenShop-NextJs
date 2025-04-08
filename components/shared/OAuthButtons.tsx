@@ -5,7 +5,7 @@ const OAuthButtons = () => {
   return (
     <>
       <Button
-        onClick={() => signIn('google')}
+        onClick={() => signIn('google', { callbackUrl: '/' })}
         type="submit"
         className="w-full mt-7"
         variant={'outline'}
@@ -15,7 +15,7 @@ const OAuthButtons = () => {
       </Button>
 
       <Button
-        onClick={() => signIn('github')}
+        onClick={() => signIn('github', { callbackUrl: '/' })}
         type="submit"
         className="w-full mt-7"
         variant={'outline'}

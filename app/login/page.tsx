@@ -1,9 +1,10 @@
 import Login from '@/components/shared/Login'
 import Register from '@/components/shared/Register'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import prisma from '@/lib/prisma'
 import React from 'react'
 
-const page = () => {
+const page = async () => {
   return (
     <div className="container !max-w-2xl mt-24">
       <Tabs defaultValue="login" className="">
